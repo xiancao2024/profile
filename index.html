@@ -3,14 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Xian Cao's CV</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple web page.</p>
-    <button id="myButton">Click me</button>
-
+    <header>
+        <div class="container">
+            <h1>Xian Cao</h1>
+            <p>Computer Scientist | Educator | Researcher</p>
+            <p><a href="mailto:cao.xian@northeastern.edu">cao.xian@northeastern.edu</a> | 407-341-8103 | Campbell, CA | <a href="https://www.linkedin.com/in/xian-cao-a75514177/" target="_blank">LinkedIn</a></p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="edu-entry">
+                <h3>Northeastern University, San Jose, CA</h3>
+                <p>MS in Computer Science, GPA 4.0/4.0</p>
+                <p>Expected Graduation: May 2025</p>
+                <p>Related Coursework: Intensive Foundations of Computer Science, Discrete Structures, Object-Oriented Design, Data Structures and Algorithms, Databases, Algorithms</p>
+            </div>
+            <div class="edu-entry">
+                <h3>University of Central Florida, Orlando, FL</h3>
+                <p>Ph.D. in Health Service Management and Research, GPA: 3.9/4.0</p>
+                <p>January 2017 - May 2022</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Python, Java, C, SQL, SPSS, Stata</li>
+                <li>NumPy, Pandas, Matplotlib</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-entry">
+                <h3>Primate Sanctuary Management Tool</h3>
+                <p>Java Swing GUI for managing primate sanctuary activities such as monkey registration, isolation, and enclosure management. (Spring 2023)</p>
+            </div>
+            <div class="project-entry">
+                <h3>White Board Project</h3>
+                <p>Implemented a drawing tool with features like shape generation, color selection, and freehand sketching. (Spring 2023)</p>
+            </div>
+            <div class="project-entry">
+                <h3>Online Questionnaire Tool</h3>
+                <p>Developed a tool for managing online questionnaires with user input and immediate answer evaluation. (Spring 2023)</p>
+            </div>
+            <div class="project-entry">
+                <h3>Chess Pieces Implementation</h3>
+                <p>Developed classes representing chess pieces with proper movement and attack capabilities according to standard chess rules. (Spring 2023)</p>
+            </div>
+            <div class="project-entry">
+                <h3>Signal Processing and Audio Compression</h3>
+                <p>Developed algorithms for signal processing and audio compression using Python libraries, reducing storage space and data costs. (Fall 2023)</p>
+            </div>
+            <div class="project-entry">
+                <h3>Data Analysis and Visualization</h3>
+                <p>Analyzed chemical concentration-product rejection rate correlations using Matplotlib and Pandas. (Fall 2023)</p>
+            </div>
+            <div class="project-entry">
+                <h3>Gradient Descent Algorithm Implementation</h3>
+                <p>Developed a predictive model for blood pressure using cholesterol data, aiding medical diagnostics. (Fall 2023)</p>
+            </div>
+            <div class="project-entry">
+                <h3>Simulation Model</h3>
+                <p>Developed a traffic simulation model replicating car movement on a route, with restrictions to prevent collisions. (Fall 2023)</p>
+            </div>
+            <div class="project-entry">
+                <h3>Optimization of Drone-Assisted Healthcare Resource</h3>
+                <p>Utilized the Traveling Salesman Problem-solving approach to enhance healthcare resource distribution efficiency. (Fall 2023)</p>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-entry">
+                <h3>Instructor, University of the Pacific, Stockton, CA</h3>
+                <p>August 2022 - May 2023</p>
+                <p>Teaching four public health courses focusing on problem-solving and real-world applications. Improved student engagement and retention by innovating teaching methods and advising over 100 students.</p>
+            </div>
+            <div class="experience-entry">
+                <h3>Research Assistant & Teaching Assistant, University of Central Florida, Orlando, FL</h3>
+                <p>January 2017 - May 2021</p>
+                <p>Conducted research on health disparities and quality of life, sharing insights at 10 conferences and 8 publications.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Xian Cao. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
