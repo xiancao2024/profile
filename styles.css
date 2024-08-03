@@ -103,8 +103,10 @@ footer p {
 }
 
 header img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    width: 250px; /* Set width */
+    height: 250px; /* Set height to match width for a perfect circle */
+    clip-path: circle(50% at 50% 50%); /* Clip the image to a circle */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    margin-bottom: 20px; /* Space below the image */
+    display: block; /* Ensure there's no extra space around the image */
 }
